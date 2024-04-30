@@ -29,15 +29,15 @@
 
 
     VSCode IncludePath:
-        ${workspaceFolder}/**
-        /usr/include/gtk-3.0
-        /usr/include/glib-2.0
-        /usr/lib/glib-2.0/include/
-        /usr/include/pango-1.0
-        /usr/include/harfbuzz
-        /usr/include/cairo
-        /usr/include/gdk-pixbuf-2.0
-        /usr/include/atk-1.0
+${workspaceFolder}/**
+/usr/include/gtk-3.0
+/usr/include/glib-2.0
+/usr/lib/glib-2.0/include/
+/usr/include/pango-1.0
+/usr/include/harfbuzz
+/usr/include/cairo
+/usr/include/gdk-pixbuf-2.0
+/usr/include/atk-1.0
     
 */
 
