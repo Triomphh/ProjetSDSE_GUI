@@ -10,7 +10,22 @@
             gcc $(pkg-config --cflags gtk+-3.0) main.c -o mon_app $(pkg-config --libs gtk+-3.0)
 
     === Ubuntu: ===============================================================================
-        gcc `pkg-config --cflags gtk+-3.0` main.c -o mon_app `pkg-config --libs gtk+-3.0`
+        AVEC pkg-config:
+            gcc `pkg-config --cflags gtk+-3.0` main.c -o mon_app `pkg-config --libs gtk+-3.0`
+
+        SANS pkg-config:
+gcc -o mon_app main.c \
+-I/usr/include/gtk-3.0 \
+-I/usr/include/glib-2.0 \
+-I/usr/lib/x86_64-linux-gnu/glib-2.0/include/ \
+-I/usr/include/pango-1.0 \
+-I/usr/include/harfbuzz \
+-I/usr/include/cairo \
+-I/usr/include/gdk-pixbuf-2.0 \
+-I/usr/include/atk-1.0 \
+-lgtk-3 -lgdk-3 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lgobject-2.0 -lglib-2.0 -lgio-2.0
+
+
 
 
         Étape 1 : Vérifier l'installation de GTK+3
